@@ -1,0 +1,461 @@
+{
+  "id": "9cf8e8cb-e919-40bf-ae09-6ec2b53bb79e",
+  "version": "2.0",
+  "name": "TestesGoogleStore",
+  "url": "https://shop.googlemerchandisestore.com",
+  "tests": [{
+    "id": "d42439f2-609e-4fa2-a658-5aa5830b35a9",
+    "name": "CT01ValidarRedirecionamento",
+    "commands": [{
+      "id": "019a2cee-ca64-48dd-abe9-863087eea974",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ceb96f7-f5bc-4b31-88bd-6833b35d1030",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9ce6719-a55f-49e0-b28e-650076b21b43",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New",
+      "targets": [
+        ["linkText=New", "linkText"],
+        ["css=.nav > li:nth-child(1) > .waves-effect", "css:finder"],
+        ["xpath=(//a[contains(text(),'New')])[2]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'Google+Redesign/New?tpt=theme1_en&sortci=newest+desc')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6629950b-1cdf-45ec-bc22-f66b2a6e851b",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f92a71dd-1c2b-4fc0-9b47-660fedb7bfba",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "834d3d6c-1c4e-4339-a111-945ebbce314b",
+    "name": "CT02ValidarOrdenacao",
+    "commands": [{
+      "id": "1b2469d0-1d98-4ac5-b02a-c365fe1ef901",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f45f6c9-e2e7-4582-84c0-2fa7ee7cd8d3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a450a6b6-9d36-4b66-835a-94cb3e21676e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New",
+      "targets": [
+        ["linkText=New", "linkText"],
+        ["css=.nav > li:nth-child(1) > .waves-effect", "css:finder"],
+        ["xpath=(//a[contains(text(),'New')])[2]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'Google+Redesign/New?tpt=theme1_en&sortci=newest+desc')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "174b3f3e-f5fd-4f6b-93f6-1e9c72043c93",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortby",
+      "targets": [
+        ["id=sortby", "id"],
+        ["css=#sortby", "css:finder"],
+        ["xpath=//select[@id='sortby']", "xpath:attributes"],
+        ["xpath=//form[@id='sortP']/select", "xpath:idRelative"],
+        ["xpath=//form[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "548d70c4-3cbe-4c51-92dc-e0f0824e4da0",
+      "comment": "",
+      "command": "select",
+      "target": "id=sortby",
+      "targets": [],
+      "value": "label=Title A --> Z"
+    }, {
+      "id": "96ca9bb0-d919-416a-9a25-4da8c6bbb01a",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93109943-a438-41d8-a607-35c4f3d82734",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b0ab8080-7cb2-4a16-8d56-48c5d1084c31",
+    "name": "CT03SelecionarItem",
+    "commands": [{
+      "id": "e19c47b3-482e-48a8-b827-a8c06762f4c4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab671c70-6fe4-43f3-b351-dcca84c5820a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfb67539-c1d4-4ca2-aa5a-5500f1b59e8b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New",
+      "targets": [
+        ["linkText=New", "linkText"],
+        ["css=.nav > li:nth-child(1) > .waves-effect", "css:finder"],
+        ["xpath=(//a[contains(text(),'New')])[2]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'Google+Redesign/New?tpt=theme1_en&sortci=newest+desc')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "458d4f95-de86-4a19-b1f7-c2588f7bbee6",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortby",
+      "targets": [
+        ["id=sortby", "id"],
+        ["css=#sortby", "css:finder"],
+        ["xpath=//select[@id='sortby']", "xpath:attributes"],
+        ["xpath=//form[@id='sortP']/select", "xpath:idRelative"],
+        ["xpath=//form[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b06d22a-818a-4dda-87d8-98d2b45c52a1",
+      "comment": "",
+      "command": "select",
+      "target": "id=sortby",
+      "targets": [],
+      "value": "label=Title A --> Z"
+    }, {
+      "id": "d1e65a9c-73e3-4350-aa78-858959e4412b",
+      "comment": "",
+      "command": "click",
+      "target": "id=parent-title-9204093",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f444baa5-8e20-4940-8636-11664203ae93",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6a637cb-3497-4801-be11-a504682af7d4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fa6e91b3-a4a5-41b2-acde-db745ad36d6f",
+    "name": "CT04AdicionarCarrinho",
+    "commands": [{
+      "id": "017d127b-691d-493c-862e-2847c65808e0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c71bc25d-d676-4509-ac2b-5591a556f3f3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de24c10f-e52e-439c-930c-8d7a6e7c3657",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New",
+      "targets": [
+        ["linkText=New", "linkText"],
+        ["css=.nav > li:nth-child(1) > .waves-effect", "css:finder"],
+        ["xpath=(//a[contains(text(),'New')])[2]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'Google+Redesign/New?tpt=theme1_en&sortci=newest+desc')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbc6832e-8c5b-4042-be8a-af739e96d66b",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortby",
+      "targets": [
+        ["id=sortby", "id"],
+        ["css=#sortby", "css:finder"],
+        ["xpath=//select[@id='sortby']", "xpath:attributes"],
+        ["xpath=//form[@id='sortP']/select", "xpath:idRelative"],
+        ["xpath=//form[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bda9acf-9236-4d35-ad64-e1c084817178",
+      "comment": "",
+      "command": "select",
+      "target": "id=sortby",
+      "targets": [],
+      "value": "label=Title A --> Z"
+    }, {
+      "id": "36d910a4-2545-4399-b915-df9efbc38d92",
+      "comment": "",
+      "command": "click",
+      "target": "id=js-item-cimage-9204093",
+      "targets": [
+        ["id=js-item-cimage-9204093", "id"],
+        ["css=#js-item-cimage-9204093", "css:finder"],
+        ["xpath=//img[@id='js-item-cimage-9204093']", "xpath:attributes"],
+        ["xpath=//div[@id='card-1']/form/a/div/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a7c6bc4-6bff-43a3-be3b-6b8a36f02624",
+      "comment": "",
+      "command": "click",
+      "target": "id=js-item-addtocartbtn-9204093",
+      "targets": [
+        ["id=js-item-addtocartbtn-9204093", "id"],
+        ["css=#js-item-addtocartbtn-9204093", "css:finder"],
+        ["xpath=//button[@id='js-item-addtocartbtn-9204093']", "xpath:attributes"],
+        ["xpath=//div[@id='page']/main/div/div/div/div[2]/form/div[5]/p/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5485f38d-eb5f-4160-8d2a-3810e01c747e",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69293cac-ffa2-4b11-a8a0-5a59587e9c8a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "21dafb5d-73a7-45b1-b57b-60cbedc8b6ce",
+    "name": "CT05ProcederCheckout",
+    "commands": [{
+      "id": "4b8b32de-c998-43ae-b5da-c1ff4d1cc559",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2abc94d3-ef06-4c14-8fc0-0d5c3170af18",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a66926f-5a82-4201-89b3-6cadaed4fd20",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New",
+      "targets": [
+        ["linkText=New", "linkText"],
+        ["css=.nav > li:nth-child(1) > .waves-effect", "css:finder"],
+        ["xpath=(//a[contains(text(),'New')])[2]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'Google+Redesign/New?tpt=theme1_en&sortci=newest+desc')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fd78d1a-1498-4b67-bbb7-b08b7dd760ca",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortby",
+      "targets": [
+        ["id=sortby", "id"],
+        ["css=#sortby", "css:finder"],
+        ["xpath=//select[@id='sortby']", "xpath:attributes"],
+        ["xpath=//form[@id='sortP']/select", "xpath:idRelative"],
+        ["xpath=//form[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0086db5-017e-4960-bc6f-50bdc83f8fc7",
+      "comment": "",
+      "command": "select",
+      "target": "id=sortby",
+      "targets": [],
+      "value": "label=Title A --> Z"
+    }, {
+      "id": "fed42c77-60fa-43ec-9245-699767ff2bc6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=New",
+      "targets": [
+        ["linkText=New", "linkText"],
+        ["css=.nav > li:nth-child(1) > .waves-effect", "css:finder"],
+        ["xpath=(//a[contains(text(),'New')])[2]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'Google+Redesign/New?tpt=theme1_en&sortci=newest+desc')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce4a532e-2660-4dc2-bb18-859ce927d484",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New",
+      "targets": [
+        ["linkText=New", "linkText"],
+        ["css=.nav > li:nth-child(1) > .waves-effect", "css:finder"],
+        ["xpath=(//a[contains(text(),'New')])[2]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'Google+Redesign/New?tpt=theme1_en&sortci=newest+desc')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4b6137e-c54b-4c31-bfd7-6ad37ca06243",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=New",
+      "targets": [
+        ["linkText=New", "linkText"],
+        ["css=.nav > li:nth-child(1) > .waves-effect", "css:finder"],
+        ["xpath=(//a[contains(text(),'New')])[2]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'Google+Redesign/New?tpt=theme1_en&sortci=newest+desc')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91ff2cd7-324e-4b6f-b42f-6ba8937582f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortby",
+      "targets": [
+        ["id=sortby", "id"],
+        ["css=#sortby", "css:finder"],
+        ["xpath=//select[@id='sortby']", "xpath:attributes"],
+        ["xpath=//form[@id='sortP']/select", "xpath:idRelative"],
+        ["xpath=//form[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d3ee1c1-3d13-4751-9b87-c6786cf66fed",
+      "comment": "",
+      "command": "select",
+      "target": "id=sortby",
+      "targets": [],
+      "value": "label=Title A --> Z"
+    }, {
+      "id": "8ba842e5-bb95-4433-acd2-cfb67f35e9bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=js-item-cimage-9204093",
+      "targets": [
+        ["id=js-item-cimage-9204093", "id"],
+        ["css=#js-item-cimage-9204093", "css:finder"],
+        ["xpath=//img[@id='js-item-cimage-9204093']", "xpath:attributes"],
+        ["xpath=//div[@id='card-1']/form/a/div/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e576c4e2-64e7-42f5-9b5a-9450b983040e",
+      "comment": "",
+      "command": "click",
+      "target": "id=js-item-addtocartbtn-9204093",
+      "targets": [
+        ["id=js-item-addtocartbtn-9204093", "id"],
+        ["css=#js-item-addtocartbtn-9204093", "css:finder"],
+        ["xpath=//button[@id='js-item-addtocartbtn-9204093']", "xpath:attributes"],
+        ["xpath=//div[@id='page']/main/div/div/div/div[2]/form/div[5]/p/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbeb982b-e0da-44e9-8cf0-c00901e248ab",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkoutbtn2",
+      "targets": [
+        ["id=checkoutbtn2", "id"],
+        ["css=#checkoutbtn2", "css:finder"],
+        ["xpath=//input[@id='checkoutbtn2']", "xpath:attributes"],
+        ["xpath=//div[@id='page']/main/div/div/div/div/form/div[5]/i/input", "xpath:idRelative"],
+        ["xpath=//div[5]/i/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00776d76-d155-4581-9ca5-1b07cfcb95b1",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "085bf5f4-26e3-46e1-99cc-2b67ad8e3d64",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5f0d9ede-1732-4888-ba15-a2d1baf0438d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://shop.googlemerchandisestore.com/"],
+  "plugins": []
+}

@@ -1,0 +1,12 @@
+Olá!
+A pasta TestesGoogle refere-se ao projeto dos testes, você pode importa-lá para o Eclipse.
+Lá no Eclipse é importante ter as seguintes bibliotecas: 
+No Modulepath você deve adicionar a JRE desejada, eu usei a 17.
+No Classpath é necessário adicionar as bibliotecas do TesteNG e do Selenium.
+Há um arquivo chamado chromedriver, e no projeto há referência ao caminho dele, no meu caso a pasta que estou te enviando (EcoFriendly) estava no desktop, então o caminho ficou: "C:\\Users\\PC\\Desktop\\EcoFriendly\\chromedriver.exe"
+Lembrando que precisa ter o java e o jre e também e precisa setar as variáveis de ambiente.
+Na pasta de vídeos há a gravação da execução dos testes.
+
+
+Há um arquivo chamado TestesGoogleStore.side
+Você pode baixar a extensão do Selenium no Google e com a extensão aberta dar um Ctrl+O e importar esse arquivo, essa é uma das maneiras de executar os testes.
